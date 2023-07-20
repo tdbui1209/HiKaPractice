@@ -24,7 +24,7 @@ namespace HiKaPractice
 
         private void button_katakana_Click(object sender, EventArgs e)
         {
-            Form form = new FormKatakana();
+            Form form = new Katakana();
             form.ShowDialog();
         }
     }
