@@ -1,6 +1,6 @@
 ﻿namespace HiKaPractice
 {
-    partial class FormKatakana
+    partial class Katakana
     {
         /// <summary>
         /// Required designer variable.
@@ -37,24 +37,24 @@
             // 
             // pictureBox_question
             // 
-            this.pictureBox_question.Location = new System.Drawing.Point(350, 100);
+            this.pictureBox_question.Location = new System.Drawing.Point(269, 26);
             this.pictureBox_question.Name = "pictureBox_question";
-            this.pictureBox_question.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox_question.Size = new System.Drawing.Size(244, 239);
             this.pictureBox_question.TabIndex = 0;
             this.pictureBox_question.TabStop = false;
             // 
             // textBox_answer
             // 
-            this.textBox_answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_answer.Location = new System.Drawing.Point(350, 250);
+            this.textBox_answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_answer.Location = new System.Drawing.Point(269, 384);
             this.textBox_answer.Name = "textBox_answer";
-            this.textBox_answer.Size = new System.Drawing.Size(100, 28);
+            this.textBox_answer.Size = new System.Drawing.Size(159, 30);
             this.textBox_answer.TabIndex = 1;
             // 
             // button_submit
             // 
             this.button_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_submit.Location = new System.Drawing.Point(473, 249);
+            this.button_submit.Location = new System.Drawing.Point(434, 386);
             this.button_submit.Name = "button_submit";
             this.button_submit.Size = new System.Drawing.Size(79, 29);
             this.button_submit.TabIndex = 2;
@@ -66,14 +66,14 @@
             // 
             this.label_result.AutoSize = true;
             this.label_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_result.Location = new System.Drawing.Point(467, 130);
+            this.label_result.Location = new System.Drawing.Point(311, 283);
             this.label_result.Name = "label_result";
             this.label_result.Size = new System.Drawing.Size(161, 32);
             this.label_result.TabIndex = 3;
             this.label_result.Text = "label_result";
             this.label_result.Visible = false;
             // 
-            // FormKatakana
+            // Katakana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,7 +82,7 @@
             this.Controls.Add(this.button_submit);
             this.Controls.Add(this.textBox_answer);
             this.Controls.Add(this.pictureBox_question);
-            this.Name = "FormKatakana";
+            this.Name = "Katakana";
             this.Text = "FormKatakana";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_question)).EndInit();
             this.ResumeLayout(false);

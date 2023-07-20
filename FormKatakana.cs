@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace HiKaPractice
 {
-    public partial class FormKatakana : Form
+    public partial class Katakana : Form
     {
         string image_path;
         string correct_answer;
         int score;
         KatakanaQuiz katakanaQuiz;
-        public FormKatakana()
+        public Katakana()
         {
             InitializeComponent();
             katakanaQuiz = new KatakanaQuiz();
