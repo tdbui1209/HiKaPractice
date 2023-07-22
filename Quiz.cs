@@ -20,9 +20,10 @@ namespace HiKaPractice
             }
             else if (quizName == "hiragana")
             {
-                pathToQuestions += "hiragaanaQuestions.json";
+                pathToQuestions += "hiraganaQuestions.json";
             }
             questions = loadJson(pathToQuestions);
+            suffleQuestions();
         }
 
         private Question[] loadJson(string pathToQuestions)
@@ -34,9 +35,20 @@ namespace HiKaPractice
             }
         }
 
+        private void suffleQuestions()
+        {
+            Random order = new Random();
+            questions = questions.OrderBy(x => order.Next()).ToArray();
+        }
+
         public Question[] getQuestions()
         {
             return questions;
+        }
+
+        public int getTotalQuestions()
+        {
+            return questions.Length;
         }
     }
 }
