@@ -1,6 +1,6 @@
 ﻿namespace HiKaPractice
 {
-    partial class Katakana
+    partial class FormQuiz
     {
         /// <summary>
         /// Required designer variable.
@@ -99,7 +99,7 @@
             this.panel1.Size = new System.Drawing.Size(742, 154);
             this.panel1.TabIndex = 6;
             // 
-            // Katakana
+            // FormQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,7 +110,7 @@
             this.Controls.Add(this.button_submit);
             this.Controls.Add(this.textBox_answer);
             this.Controls.Add(this.label_result);
-            this.Name = "Katakana";
+            this.Name = "FormQuiz";
             this.Text = "FormKatakana";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
