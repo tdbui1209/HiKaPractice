@@ -1,4 +1,4 @@
-# HiKa Practice - Japanese character practice
+# HiKa Practice - Japanese alphabets practice
 ![image](https://github.com/tdbui1209/HiKaPractice/assets/72682397/0e750c54-789d-423c-9f67-7a59dd80d2d9)
 
 # Description
