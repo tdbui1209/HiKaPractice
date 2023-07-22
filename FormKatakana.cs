@@ -19,6 +19,7 @@ namespace HiKaPractice
         int question_remaining;
         int score;
 
+        List<string> questions = new List<string>();
         List<string> history_answer = new List<string>();
         List<string> history_correct_answer = new List<string>();
 
@@ -35,6 +36,8 @@ namespace HiKaPractice
 
         void draw()
         {
+            textBox_answer.Text = "";
+            question_remaining--;
             label_question_remaining.Text = "Số câu còn lại: " + question_remaining.ToString();
             try
             {
@@ -45,7 +48,7 @@ namespace HiKaPractice
             }
             catch (Exception ex)
             {
-                Form form = new FormResult(total_question, score, history_answer, history_correct_answer);
+                Form form = new FormResult(questions, score, history_answer, history_correct_answer);
                 form.ShowDialog();
             }
         }
@@ -68,9 +71,12 @@ namespace HiKaPractice
             }
             label_result.Visible = true;
             label_result.TextAlign = ContentAlignment.MiddleCenter;
+
+            questions.Add(question);
+            history_answer.Add(answer);
+            history_correct_answer.Add(correct_answer);
+
             draw();
-            textBox_answer.Text = "";
-            question_remaining--;
         }
 
         void button_submit_Click(object sender, EventArgs e)

@@ -33,6 +33,10 @@
             this.label_correct_num = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label_correct_percent = new System.Windows.Forms.Label();
+            this.listView_result = new System.Windows.Forms.ListView();
+            this.columnHeader_Question = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_CorrectAnswer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_Answer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -85,11 +89,42 @@
             this.label_correct_percent.TabIndex = 4;
             this.label_correct_percent.Text = "label5";
             // 
+            // listView_result
+            // 
+            this.listView_result.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_Question,
+            this.columnHeader_CorrectAnswer,
+            this.columnHeader_Answer});
+            this.listView_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView_result.HideSelection = false;
+            this.listView_result.Location = new System.Drawing.Point(12, 241);
+            this.listView_result.Name = "listView_result";
+            this.listView_result.Size = new System.Drawing.Size(758, 300);
+            this.listView_result.TabIndex = 5;
+            this.listView_result.UseCompatibleStateImageBehavior = false;
+            this.listView_result.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader_Question
+            // 
+            this.columnHeader_Question.Text = "Câu hỏi";
+            this.columnHeader_Question.Width = 74;
+            // 
+            // columnHeader_CorrectAnswer
+            // 
+            this.columnHeader_CorrectAnswer.Text = "Kết quả đúng";
+            this.columnHeader_CorrectAnswer.Width = 119;
+            // 
+            // columnHeader_Answer
+            // 
+            this.columnHeader_Answer.Text = "Trả lời";
+            this.columnHeader_Answer.Width = 561;
+            // 
             // FormResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.listView_result);
             this.Controls.Add(this.label_correct_percent);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label_correct_num);
@@ -109,5 +144,9 @@
         private System.Windows.Forms.Label label_correct_num;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label_correct_percent;
+        private System.Windows.Forms.ListView listView_result;
+        private System.Windows.Forms.ColumnHeader columnHeader_Question;
+        private System.Windows.Forms.ColumnHeader columnHeader_Answer;
+        private System.Windows.Forms.ColumnHeader columnHeader_CorrectAnswer;
     }
 }
