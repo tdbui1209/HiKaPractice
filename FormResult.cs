@@ -13,40 +13,23 @@ namespace HiKaPractice
 {
     public partial class FormResult : Form
     {
-        public FormResult(List<string> questions, int correct,
-            List<string> history_answer, List<string> history_correct_answer)
+        public FormResult(List<string> questions_list, List<string> answers_list, List<string> user_answers_list, int score)
         {
             InitializeComponent();
-            int total_question = questions.Count();
-            double correct_percent = (double)correct / total_question * 100;
+            int total_question = questions_list.Count();
+            double correct_percent = (double)score / total_question * 100;
             correct_percent = Math.Round(correct_percent, 2);
 
-            label_correct_num.Text = correct.ToString() + "/" + total_question.ToString();
+            label_correct_num.Text = score.ToString() + "/" + total_question.ToString();
             label_correct_percent.Text = correct_percent.ToString() + "%";
 
-            for (int i = 0;  i < questions.Count; i++)
+            for (int i = 0; i < questions_list.Count(); i++)
             {
-                ListViewItem item = new ListViewItem();
-                item.Text = questions[i];
+                ListViewItem item = new ListViewItem(questions_list[i]);
+                item.SubItems.Add(answers_list[i]);
+                item.SubItems.Add(user_answers_list[i]);
+
                 listView_result.Items.Add(item);
-
-                ListViewItem.ListViewSubItem subitem = new ListViewItem.ListViewSubItem(item, history_correct_answer[i]);
-                item.SubItems.Add(subitem);
-
-                subitem = new ListViewItem.ListViewSubItem(item, history_answer[i]);
-
-                if (history_correct_answer[i].Equals(history_answer[i]))
-                {
-                    subitem.ForeColor = Color.Green;
-                }
-                else
-                {
-                    subitem.ForeColor = Color.Red;
-                }
-                
-                item.SubItems.Add(subitem);
-
-
             }
         }
     }

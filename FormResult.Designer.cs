@@ -53,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(285, 150);
+            this.label2.Location = new System.Drawing.Point(229, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 25);
             this.label2.TabIndex = 1;
@@ -63,17 +63,17 @@
             // 
             this.label_correct_num.AutoSize = true;
             this.label_correct_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_correct_num.Location = new System.Drawing.Point(437, 150);
+            this.label_correct_num.Location = new System.Drawing.Point(381, 150);
             this.label_correct_num.Name = "label_correct_num";
-            this.label_correct_num.Size = new System.Drawing.Size(64, 25);
+            this.label_correct_num.Size = new System.Drawing.Size(172, 25);
             this.label_correct_num.TabIndex = 2;
-            this.label_correct_num.Text = "label3";
+            this.label_correct_num.Text = "label_correct_num";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(285, 191);
+            this.label4.Location = new System.Drawing.Point(229, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 25);
             this.label4.TabIndex = 3;
@@ -83,11 +83,11 @@
             // 
             this.label_correct_percent.AutoSize = true;
             this.label_correct_percent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_correct_percent.Location = new System.Drawing.Point(437, 191);
+            this.label_correct_percent.Location = new System.Drawing.Point(381, 191);
             this.label_correct_percent.Name = "label_correct_percent";
-            this.label_correct_percent.Size = new System.Drawing.Size(64, 25);
+            this.label_correct_percent.Size = new System.Drawing.Size(199, 25);
             this.label_correct_percent.TabIndex = 4;
-            this.label_correct_percent.Text = "label5";
+            this.label_correct_percent.Text = "label_correct_percent";
             // 
             // listView_result
             // 
