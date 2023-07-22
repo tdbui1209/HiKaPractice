@@ -19,12 +19,13 @@ namespace HiKaPractice
 
         private void button_hiragana_Click(object sender, EventArgs e)
         {
-
+            Form form = new FormQuiz("hiragana");
+            form.ShowDialog();
         }
 
         private void button_katakana_Click(object sender, EventArgs e)
         {
-            Form form = new Katakana();
+            Form form = new FormQuiz("katakana");
             form.ShowDialog();
         }
     }
