@@ -13,7 +13,7 @@ namespace HiKaPractice
 {
     public partial class Katakana : Form
     {
-        string image_path;
+        string question;
         string correct_answer;
         int total_question;
         int question_remaining;
@@ -39,9 +39,9 @@ namespace HiKaPractice
             try
             {
                 string[] draw = katakanaQuiz.Draw();
-                image_path = draw[0];
+                question = draw[0];
                 correct_answer = draw[1];
-                pictureBox_question.Image = Image.FromFile(image_path);
+                label_question.Text = question;
             }
             catch (Exception ex)
             {

@@ -10,27 +10,24 @@ namespace HiKaPractice
 {
     internal class KatakanaQuiz
     {
-        static string data_path = @"D:\HiKaPractice\assets\katakana";
-        string[] files = Directory.GetFiles(data_path);
-        Stack<string> stack_questions = new Stack<string>();
+        Stack<Question> stack_questions = new Stack<Question>();
         int total_questions;
         public KatakanaQuiz()
         {
             Random order = new Random();
-            files = files.OrderBy(x => order.Next()).ToArray();
-            stack_questions = new Stack<string>();
-            foreach (string file in files)
+            Question[] questions = new Quiz("katakana").getQuestions();
+            questions = questions.OrderBy(x => order.Next()).ToArray();
+            foreach (Question question in questions)
             {
-                stack_questions.Push(file);
+                stack_questions.Push(question);
             }
             total_questions = stack_questions.Count();
         }
 
         public string[] Draw()
         {
-            string question_path = this.stack_questions.Pop();
-            string correct_answer = Path.GetFileNameWithoutExtension(question_path);
-            return new string[] { question_path, correct_answer };
+            Question question = stack_questions.Pop();
+            return new string[] { question.question, question.answer };
         }
 
         public int get_total_question()

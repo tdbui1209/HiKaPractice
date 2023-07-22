@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox_question = new System.Windows.Forms.PictureBox();
             this.textBox_answer = new System.Windows.Forms.TextBox();
             this.button_submit = new System.Windows.Forms.Button();
             this.label_result = new System.Windows.Forms.Label();
             this.label_question_remaining = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_question)).BeginInit();
+            this.label_question = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox_question
-            // 
-            this.pictureBox_question.Location = new System.Drawing.Point(269, 26);
-            this.pictureBox_question.Name = "pictureBox_question";
-            this.pictureBox_question.Size = new System.Drawing.Size(244, 239);
-            this.pictureBox_question.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_question.TabIndex = 0;
-            this.pictureBox_question.TabStop = false;
             // 
             // textBox_answer
             // 
@@ -82,11 +74,30 @@
             this.label_question_remaining.AutoSize = true;
             this.label_question_remaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_question_remaining.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label_question_remaining.Location = new System.Drawing.Point(12, 26);
+            this.label_question_remaining.Location = new System.Drawing.Point(12, 9);
             this.label_question_remaining.Name = "label_question_remaining";
             this.label_question_remaining.Size = new System.Drawing.Size(234, 25);
             this.label_question_remaining.TabIndex = 4;
             this.label_question_remaining.Text = "label_question_remaining";
+            // 
+            // label_question
+            // 
+            this.label_question.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_question.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_question.Location = new System.Drawing.Point(0, 0);
+            this.label_question.Name = "label_question";
+            this.label_question.Size = new System.Drawing.Size(742, 154);
+            this.label_question.TabIndex = 5;
+            this.label_question.Text = "label_ques";
+            this.label_question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label_question);
+            this.panel1.Location = new System.Drawing.Point(20, 65);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(742, 154);
+            this.panel1.TabIndex = 6;
             // 
             // Katakana
             // 
@@ -94,25 +105,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_question_remaining);
             this.Controls.Add(this.button_submit);
             this.Controls.Add(this.textBox_answer);
-            this.Controls.Add(this.pictureBox_question);
             this.Controls.Add(this.label_result);
             this.Name = "Katakana";
             this.Text = "FormKatakana";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_question)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox_question;
         private System.Windows.Forms.TextBox textBox_answer;
         private System.Windows.Forms.Button button_submit;
         private System.Windows.Forms.Label label_result;
         private System.Windows.Forms.Label label_question_remaining;
+        private System.Windows.Forms.Label label_question;
+        private System.Windows.Forms.Panel panel1;
     }
 }
